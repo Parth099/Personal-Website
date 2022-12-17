@@ -7,6 +7,9 @@ module.exports = {
                 navbar: "#272727",
                 body: "#323232",
             },
+            fontFamily: {
+                inter: ["var(--font-inter)", "Helvetica"],
+            },
         },
     },
     plugins: [],
