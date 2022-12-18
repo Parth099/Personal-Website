@@ -1,6 +1,6 @@
 import type { AppProps } from "next/app";
 import "/styles/globals.css";
-import { Inter } from "@next/font/google";
+import { Inter, Montserrat } from "@next/font/google";
 
 //components
 import Navbar from "@Navbar/Navbar";
@@ -11,6 +11,11 @@ const inter = Inter({
     variable: "--font-inter",
 });
 
+const montserrat = Montserrat({
+    subsets: ["latin"],
+    variable: "--font-montserrat",
+});
+
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
@@ -18,6 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 {`
                     :root {
                         --font-inter: ${inter.style.fontFamily};
+                        --font-montserrat: ${montserrat.style.fontFamily};
                     }
                 `}
             </style>

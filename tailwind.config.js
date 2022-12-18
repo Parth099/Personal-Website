@@ -9,6 +9,7 @@ module.exports = {
             },
             fontFamily: {
                 inter: ["var(--font-inter)", "Helvetica"],
+                montserrat: ["var(--font-montserrat)", "Helvetica"],
             },
         },
     },

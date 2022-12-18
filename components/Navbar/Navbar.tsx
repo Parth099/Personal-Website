@@ -1,22 +1,25 @@
 import Link from "next/link";
 import React from "react";
+import AnimatedLogo from "./AnimatedLogo";
 
 export default function Navbar() {
     return (
-        <nav className="bg-navbar text-white font-inter">
-            <div className="flex justify-between">
-                <span className="">P</span>
-                <section className="flex">
-                    <Link href="/" className="py-4 px-4">
+        <nav className="bg-navbar text-white font-inter" id="#">
+            <div className="flex justify-between font-black text-4xl">
+                <section className="logo ml-6 flex items-center">
+                    <AnimatedLogo firstLetter="P" rest="arth Patel" />
+                </section>
+                <section className="flex font-semibold text-xl last:pr-6">
+                    <Link href="/#" className="nav-link">
                         Home
                     </Link>
-                    <Link href="/about-me" className="py-4 px-4">
+                    <Link href="/about-me" className="nav-link">
                         About Me
                     </Link>
-                    <Link href="/research" className="py-4 px-4">
+                    <Link href="/research" className="nav-link">
                         Research
                     </Link>
-                    <Link href="/contact" className="py-4 px-4">
+                    <Link href="/contact" className="nav-link">
                         Contact Information
                     </Link>
                 </section>
