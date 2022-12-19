@@ -7,7 +7,7 @@ interface TextSectionProps {
 
 export default function TextSection({ text }: TextSectionProps) {
     return (
-        <section className="bg-terminalTabColor px-4 pt-2 rounded-b-lg">
+        <section className="bg-terminalTabColor px-4 pt-2 pb-4 rounded-b-lg">
             {text.map((str, idx) => {
                 return (
                     <pre key={idx} className="block">
