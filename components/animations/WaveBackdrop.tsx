@@ -1,10 +1,7 @@
 import React from "react";
+import { ReactFCWithChildren } from "types/ReactTypes";
 
-interface BackdropProps {
-    children?: React.ReactNode;
-}
-
-const WaveBackdrop: React.FC<BackdropProps> = ({ children }) => {
+const WaveBackdrop: React.FC<ReactFCWithChildren> = ({ children }) => {
     return (
         <section className="bg-body">
             <>{children}</>
@@ -20,9 +17,9 @@ const WaveBackdrop: React.FC<BackdropProps> = ({ children }) => {
                 <path
                     d="M 0,600 C 0,600 0,300 0,300 C 154,288.1333333333333 308,276.2666666666667 453,297 C 598,317.7333333333333 734,371.06666666666666 897,377 C 1060,382.93333333333334 1250,341.4666666666667 1440,300 C 1440,300 1440,600 1440,600 Z"
                     stroke="none"
-                    stroke-width="0"
+                    strokeWidth="0"
                     fill="#fff"
-                    fill-opacity="1"
+                    fillOpacity="1"
                     className="transition-all ease-in-out delay-150 path-0"
                 ></path>
             </svg>

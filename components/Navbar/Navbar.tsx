@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import AnimatedLogo from "./AnimatedLogo";
+import AnimatedLogo from "../animations/AnimatedLogo";
 
 export default function Navbar() {
     return (
