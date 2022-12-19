@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     const IntroductionString = fileContents.toString();
 
     //save as array (save time by preformatting props)
-    const introduction = IntroductionString.split("\r?\n"); //split by new line
+    const introduction = IntroductionString.split(/\r?\n/); //split by new line
 
     return {
         props: {
