@@ -1,8 +1,9 @@
 import React from "react";
 import ExternalShell from "./External-Shell";
 
-interface TerminalProps {
+export interface TerminalProps {
     filename: string;
+    introduction: string[];
 }
 
 export default function Terminal({ filename }: TerminalProps) {

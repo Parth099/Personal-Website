@@ -1,11 +1,15 @@
-import WaveBackdrop from "components/animations/WaveBackdrop";
-import Terminal from "components/Code-Terminal.tsx/Terminal";
-import { GetStaticProps } from "next";
-import Head from "next/head";
+//node imports
+import { readFile } from "fs/promises";
 
-interface LandingPageProps {
-    filename: string;
-}
+//types
+import { GetStaticProps } from "next";
+
+//components
+import Head from "next/head";
+import WaveBackdrop from "components/animations/WaveBackdrop";
+import Terminal, { TerminalProps } from "components/Code-Terminal.tsx/Terminal";
+
+type LandingPageProps = TerminalProps; //new time for future intersections
 
 export default function Home(props: LandingPageProps) {
     return (
@@ -18,17 +22,27 @@ export default function Home(props: LandingPageProps) {
             </Head>
             <WaveBackdrop>
                 <section className="primary-terminal-container pt-4">
-                    <Terminal filename={props.filename} />
+                    <Terminal filename={props.filename} introduction={props.introduction} />
                 </section>
             </WaveBackdrop>
         </>
     );
 }
 
-export const getStaticProps: GetStaticProps = (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
+    const filename = "introduction.txt";
+
+    //read in introduction text
+    const fileContents = await readFile(`./data/${filename}`);
+    const IntroductionString = fileContents.toString();
+
+    //save as array (save time by preformatting props)
+    const introduction = IntroductionString.split("\r?\n"); //split by new line
+
     return {
         props: {
-            filename: "introduction.txt",
+            filename,
+            introduction,
         },
     };
 };
