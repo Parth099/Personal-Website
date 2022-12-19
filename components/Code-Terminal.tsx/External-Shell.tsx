@@ -10,16 +10,11 @@ interface ExternalShellProps {
 
 const ExternalShell: React.FC<ReactFCWithChildren & ExternalShellProps> = ({ children, filename }) => {
     return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1 }}
-            className="bg-terminalTop rounded-t-lg border-b-0 flex pl-3 pt-2"
-        >
+        <div className="bg-terminalTop rounded-t-lg border-b-0 flex pl-3 pt-2">
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 1.5 }}
+                transition={{ duration: 1 }}
                 className="bg-terminalTabColor pb-2 pt-2 px-3 border-terminalAccent border-[1px] border-b-0 text-base flex items-center gap-1 rounded-t-xl"
             >
                 <div className="img-container w-4 h-4">
@@ -27,7 +22,7 @@ const ExternalShell: React.FC<ReactFCWithChildren & ExternalShellProps> = ({ chi
                 </div>
                 {filename}
             </motion.div>
-        </motion.div>
+        </div>
     );
 };
 

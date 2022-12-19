@@ -21,7 +21,7 @@ export default function Home(props: LandingPageProps) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <WaveBackdrop>
-                <section className="primary-terminal-container pt-4">
+                <section className="primary-terminal-container pt-8">
                     <Terminal filename={props.filename} introduction={props.introduction} />
                 </section>
             </WaveBackdrop>
