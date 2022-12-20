@@ -1,32 +1,53 @@
 import React from "react";
 import Image from "next/image";
 
-import { ReactFCWithChildren } from "types/ReactTypes";
 import { motion } from "framer-motion";
 
 interface ExternalShellProps {
     filename: string;
 }
 
-const ExternalShell: React.FC<ReactFCWithChildren & ExternalShellProps> = ({ children, filename }) => {
+const showHideVarient = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: { duration: 1 },
+    },
+};
+
+const controlButtonVarients = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: (i: number) => {
+        return {
+            opacity: 1,
+            transition: { duration: 0.5, delay: i * 0.3 },
+        };
+    },
+};
+
+const ExternalShell: React.FC<ExternalShellProps> = ({ filename }) => {
+    //used for animation purposes
+    const controlButtonColors = ["bg-red-700", "bg-orange-500", "bg-green-800"];
+
     return (
         <div className="bg-terminalTop rounded-t-lg border-b-0 flex pl-3 pt-2">
-            <div className="control buttons pr-4 pb-2 self-center flex gap-2">
-                <div className="w-4 h-4 bg-red-700 rounded-full"></div>
-                <div className="w-4 h-4 bg-orange-500 rounded-full"></div>
-                <div className="w-4 h-4 bg-green-800 rounded-full"></div>
-            </div>
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                className="bg-terminalTabColor pb-2 pt-2 px-3 border-terminalAccent border-[1px] border-b-0 text-base flex items-center gap-1 rounded-t-xl "
-            >
-                <div className="img-container w-4 h-4">
-                    <Image src="/text-file-icon.png" alt="" width={16} height={16} />
-                </div>
-                {filename}
+            <motion.div variants={showHideVarient} className="control buttons pr-4 pb-2 self-center flex gap-2">
+                {controlButtonColors.map((color, i) => {
+                    return <motion.div variants={controlButtonVarients} custom={i} className={`w-4 h-4 rounded-full ${color}`} key={i}></motion.div>;
+                })}
             </motion.div>
+            <div className="bg-terminalTabColor pb-2 pt-2 px-3 border-terminalAccent border-[1px] border-b-0 text-base rounded-t-xl ">
+                <motion.div variants={showHideVarient} className="flex justify-center gap-1">
+                    <div className="img-container w-4 h-4 self-center">
+                        <Image src="/text-file-icon.png" alt="" width={16} height={16} />
+                    </div>
+                    <span className="self-center">{filename}</span>
+                </motion.div>
+            </div>
         </div>
     );
 };
