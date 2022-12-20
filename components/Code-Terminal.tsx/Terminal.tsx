@@ -14,7 +14,7 @@ export interface TerminalProps {
     introduction: string[];
 }
 
-//framer motion varient
+//fade in effect but it first runs and only then triggers children animations
 const TerminalVariant = {
     hidden: {
         opacity: 0,

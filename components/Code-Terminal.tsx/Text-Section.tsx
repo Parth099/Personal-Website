@@ -5,6 +5,7 @@ interface TextSectionProps {
     text: string[];
 }
 
+//fades in text sequentially
 const textVarients = {
     hidden: {
         opacity: 0,
@@ -12,7 +13,7 @@ const textVarients = {
     visible: (i: number) => {
         return {
             opacity: 1,
-            transition: { duration: 0.5, delay: i * 0.2 },
+            transition: { duration: 0.4, delay: i * 0.2 },
         };
     },
 };

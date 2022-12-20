@@ -3,10 +3,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-interface ExternalShellProps {
-    filename: string;
-}
-
+//simple fade in effect
 const showHideVarient = {
     hidden: {
         opacity: 0,
@@ -17,6 +14,7 @@ const showHideVarient = {
     },
 };
 
+//staggers the loading of "buttons" (loads them one by one)
 const controlButtonVarients = {
     hidden: {
         opacity: 0,
@@ -28,6 +26,10 @@ const controlButtonVarients = {
         };
     },
 };
+
+interface ExternalShellProps {
+    filename: string;
+}
 
 const ExternalShell: React.FC<ExternalShellProps> = ({ filename }) => {
     //used for animation purposes
