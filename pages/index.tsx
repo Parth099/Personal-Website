@@ -51,7 +51,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
             introduction,
             SocialInfos: [
                 { socialLink: "https://github.com/Parth099", introText: "View my Github", SocialMediaName: "github" },
-                { socialLink: "https://www.linkedin.com/in/parth-patel-tu/", introText: "Connect With me on linked in", SocialMediaName: "linkedin" },
+                { socialLink: "https://www.linkedin.com/in/parth-patel-tu/", introText: "Connect With me on Linkedin", SocialMediaName: "linkedin" },
             ],
         },
     };
