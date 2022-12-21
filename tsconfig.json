@@ -19,6 +19,6 @@
             "@Navbar/*": ["components/Navbar/*"]
         }
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Code-Terminal"],
     "exclude": ["node_modules"]
 }

@@ -4,6 +4,7 @@ import { Inter, Montserrat } from "@next/font/google";
 
 //components
 import Navbar from "@Navbar/Navbar";
+import Head from "next/head";
 
 //fonts
 const inter = Inter({
@@ -27,6 +28,9 @@ export default function App({ Component, pageProps }: AppProps) {
                     }
                 `}
             </style>
+            <Head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>
             <Navbar />
             <Component {...pageProps} />
         </>

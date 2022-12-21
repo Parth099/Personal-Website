@@ -1,6 +1,7 @@
 //node imports
 import { readFile } from "fs/promises";
 import TimelineData from "../data/Timeline.json";
+import Skills from "../data/Skills.json";
 
 //types
 import { GetStaticProps } from "next";
@@ -11,10 +12,12 @@ import { motion } from "framer-motion";
 //components
 import Head from "next/head";
 import WaveBackdrop from "components/animations/WaveBackdrop";
-import Terminal, { TerminalProps } from "components/Code-Terminal.tsx/Terminal";
+import Terminal, { TerminalProps } from "components/Code-Terminal/Terminal";
 import SocialMediaIcons, { SocialMediaIconsInfo } from "components/SocialMediaIcons/SocialMediaIcons";
 import Timeline from "components/Timeline/Timeline";
 import { TimelineInstanceProps } from "components/Timeline/TimelineEntry";
+import TechnicalSkills from "components/TechnicalSkills/TechnicalSkills";
+import { TechnicalSkillProps } from "components/TechnicalSkills/TechnicalSkill";
 
 //animation
 const TimelineVarients = {
@@ -34,6 +37,7 @@ const TimelineVarients = {
 type LandingPageProps = TerminalProps & {
     SocialInfos: SocialMediaIconsInfo[];
     Timeline: TimelineInstanceProps[];
+    Skills: TechnicalSkillProps[];
 }; //new time for future intersections
 
 export default function Home(props: LandingPageProps) {
@@ -65,6 +69,11 @@ export default function Home(props: LandingPageProps) {
                 </motion.div>
             </section>
             <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>
+            <section className="tech-skills bg-body">
+                <div className="mx-auto 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm">
+                    <TechnicalSkills Skills={Skills} />
+                </div>
+            </section>
         </>
     );
 }
@@ -88,15 +97,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
                 { socialLink: "https://www.linkedin.com/in/parth-patel-tu/", introText: "Connect With me on Linkedin", SocialMediaName: "linkedin" },
             ],
             Timeline: TimelineData,
+            Skills,
         },
     };
 };
-
-/*
-
-SocialMediaIconsInfo {
-    socialLink: string;
-    introText: string;
-    SocialMediaName: string;
-}
-*/
