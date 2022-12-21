@@ -33,5 +33,30 @@
             "technology": "Matlab"
         }
     ],
-    "frameworks": []
+    "frameworks": [
+        {
+            "path": "/tech-icons/reactjs.svg",
+            "technology": "ReactJS"
+        },
+        {
+            "path": "/tech-icons/nextjs.svg",
+            "technology": "NextJS"
+        },
+        {
+            "path": "/tech-icons/nodejs.svg",
+            "technology": "Node.js"
+        },
+        {
+            "path": "/tech-icons/tailwindcss.svg",
+            "technology": "TailwindCSS"
+        },
+        {
+            "path": "/tech-icons/jest.svg",
+            "technology": "Jest"
+        },
+        {
+            "path": "/tech-icons/firebase.svg",
+            "technology": "Firebase"
+        }
+    ]
 }
