@@ -32,7 +32,7 @@ export default function Terminal({ filename, introduction }: TerminalProps) {
                 initial="hidden"
                 animate="visible"
                 variants={TerminalVariant}
-                className="terminal-internal-container rounded-lg max-w-maxview mx-auto shadow-2xl "
+                className="terminal-internal-container rounded-lg mx-auto shadow-2xl 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm"
             >
                 <ExternalShell filename={filename} />
                 <TextSection text={introduction} />

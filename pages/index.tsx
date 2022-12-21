@@ -58,7 +58,7 @@ export default function Home(props: LandingPageProps) {
                     variants={TimelineVarients}
                     initial="hidden"
                     animate="visible"
-                    className="timeline-container-internal max-w-maxview mx-auto"
+                    className="timeline-container-internal mx-auto 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm"
                 >
                     <h2 className="text-body text-4xl w-full font-black font-inter border-b-4 border-body mb-4">Timeline</h2>
                     <Timeline timeline={props.Timeline} />

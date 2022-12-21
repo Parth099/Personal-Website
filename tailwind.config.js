@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+max_view_width = "1280px";
+
 module.exports = {
     content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
     theme: {
@@ -15,10 +18,21 @@ module.exports = {
                 montserrat: ["var(--font-montserrat)", "Helvetica"],
             },
             width: {
-                maxview: "1280px",
+                maxview: max_view_width,
             },
             maxWidth: {
-                maxview: "1280px",
+                maxview: max_view_width,
+                sm: "640px",
+                md: "768px",
+                lg: "1024px",
+            },
+            screens: {
+                "2xl-max": { max: "1535px" },
+                "xl-max": { max: "1279px" },
+                "lg-max": { max: "1023px" },
+                "mid-max": { max: "900px" },
+                "md-max": { max: "767px" },
+                "sm-max": { max: "639px" },
             },
         },
     },

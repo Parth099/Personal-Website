@@ -23,7 +23,7 @@ export interface SocialMediaIconsInfo {
 
 export default function SocialMediaIcons({ SocialInfos }: { SocialInfos: SocialMediaIconsInfo[] }) {
     return (
-        <div className="flex gap-10 justify-center">
+        <div className="flex gap-10 justify-center md-max:flex-col md-max:gap-5">
             {SocialInfos.map((SI, i) => {
                 return (
                     <motion.div variants={SocialMediaIconVarients} initial="hidden" animate="visible" custom={i} key={i}>
