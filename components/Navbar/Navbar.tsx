@@ -4,7 +4,7 @@ import AnimatedLogo from "../animations/AnimatedLogo";
 
 export default function Navbar() {
     return (
-        <nav className="bg-navbar text-white font-inter" id="#">
+        <nav className="bg-navbar text-white font-inter sticky top-0 left-0 z-10" id="#">
             <div className="flex justify-between font-black text-4xl">
                 <section className="logo ml-6 flex items-center">
                     <AnimatedLogo firstLetter="P" rest="arth Patel" />

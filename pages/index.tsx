@@ -45,7 +45,7 @@ export default function Home(props: LandingPageProps) {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <WaveBackdrop>
+            <WaveBackdrop wavecolor="#fff" height="200px" bodycolorclass="bg-body">
                 <section className="primary-terminal-container pt-8">
                     <Terminal filename={props.filename} introduction={props.introduction} />
                 </section>
@@ -53,7 +53,7 @@ export default function Home(props: LandingPageProps) {
                     <SocialMediaIcons SocialInfos={props.SocialInfos} />
                 </section>
             </WaveBackdrop>
-            <section className="timeline-container">
+            <section className="timeline-container overflow-x-hidden">
                 <motion.div
                     variants={TimelineVarients}
                     initial="hidden"
@@ -64,6 +64,7 @@ export default function Home(props: LandingPageProps) {
                     <Timeline timeline={props.Timeline} />
                 </motion.div>
             </section>
+            <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>
         </>
     );
 }
