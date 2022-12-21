@@ -16,8 +16,6 @@ import Terminal, { TerminalProps } from "components/Code-Terminal/Terminal";
 import SocialMediaIcons, { SocialMediaIconsInfo } from "components/SocialMediaIcons/SocialMediaIcons";
 import Timeline from "components/Timeline/Timeline";
 import { TimelineInstanceProps } from "components/Timeline/TimelineEntry";
-import TechnicalSkills from "components/TechnicalSkills/TechnicalSkills";
-import { TechnicalSkillProps } from "components/TechnicalSkills/TechnicalSkill";
 import SkillsList, { TSkills } from "components/TechnicalSkills/SkillsList";
 
 //animation
@@ -58,7 +56,8 @@ export default function Home(props: LandingPageProps) {
                     <SocialMediaIcons SocialInfos={props.SocialInfos} />
                 </section>
             </WaveBackdrop>
-            <section className="timeline-container overflow-x-hidden bg-white">
+            <section className="timeline-container overflow-x-hidden bg-white relative md-max:pl-4">
+                <div className="absolute top-[-100px] md-max:top-[-155px] sm-max:top-[-210px]" id="timeline"></div>
                 <motion.div
                     variants={TimelineVarients}
                     initial="hidden"
@@ -72,7 +71,6 @@ export default function Home(props: LandingPageProps) {
             <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>
             <section className="tech-skills bg-body">
                 <div className="mx-auto 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm">
-                    <h2 className="text-white text-4xl w-full font-black font-inter border-b-4 border-white mb-4">Technical Skills</h2>
                     <SkillsList Skills={props.Skills} />
                 </div>
             </section>
