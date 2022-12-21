@@ -19,7 +19,7 @@ export default function Navbar() {
                     <Link href="/research" className="nav-link">
                         Research
                     </Link>
-                    <Link href="/contact" className="nav-link">
+                    <Link href="/#contact" className="nav-link">
                         Contact Information
                     </Link>
                 </section>

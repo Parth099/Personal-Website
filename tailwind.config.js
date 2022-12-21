@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 max_view_width = "1280px";
+contactCircle = "32px";
 
 module.exports = {
     content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
@@ -12,6 +13,7 @@ module.exports = {
                 terminalTop: "#161b22",
                 terminalAccent: "#30363d",
                 terminalTabColor: "#24292f",
+                whiteTransparent: "rgba(255, 255, 255, 0.5)",
             },
             fontFamily: {
                 inter: ["var(--font-inter)", "Helvetica"],
@@ -19,6 +21,10 @@ module.exports = {
             },
             width: {
                 maxview: max_view_width,
+                contactCircle,
+            },
+            height: {
+                contactCircle,
             },
             maxWidth: {
                 maxview: max_view_width,

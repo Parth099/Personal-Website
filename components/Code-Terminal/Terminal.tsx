@@ -27,7 +27,7 @@ const TerminalVariant = {
 
 export default function Terminal({ filename, introduction }: TerminalProps) {
     return (
-        <section className="terminal-container text-white font-mono">
+        <section className="terminal-container text-white font-mono md-max:px-4 md-max:text-sm">
             <motion.div
                 initial="hidden"
                 animate="visible"

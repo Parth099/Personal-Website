@@ -47,7 +47,7 @@ const ExternalShell: React.FC<ExternalShellProps> = ({ filename }) => {
                     <div className="img-container w-4 h-4 self-center">
                         <Image src="/text-file-icon.png" alt="" width={16} height={16} />
                     </div>
-                    <span className="self-center">{filename}</span>
+                    <span className="self-center mid-max:text-sm">{filename}</span>
                 </motion.div>
             </div>
         </div>
