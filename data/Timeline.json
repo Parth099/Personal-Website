@@ -1,0 +1,33 @@
+[
+    {
+        "date": "June 2023",
+        "title": "Incoming Software Engineering Intern at JP Morgan & Chase"
+    },
+    {
+        "date": "January 2023",
+        "title": "Hired by the Computing Department as Teaching Assistant for Operating Systems (CIS3207)"
+    },
+    {
+        "date": "August 2022",
+        "title": "Joined the Math Consulting Center at Temple University",
+        "info": ["Tutored students in topics such as Probability and Calculus"]
+    },
+    {
+        "date": "March 2022",
+        "title": "Joined the Human Computer Interaction Research Lab at Temple University",
+        "info": [
+            "Learned core research and product-building skills from Professor Stephen MacNeil",
+            "Published two papers about helping people learn about data visualizations online"
+        ]
+    },
+    {
+        "date": "December 2021",
+        "title": "Started Working for the Small Business Development Center (SBDC) at Temple",
+        "info": ["Helped local clients build their online presence by meeting weekly and building their website"]
+    },
+    {
+        "date": "August 2020",
+        "title": "Started Attending Temple University",
+        "info": []
+    }
+]

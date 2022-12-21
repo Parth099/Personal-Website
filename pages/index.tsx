@@ -1,17 +1,39 @@
 //node imports
 import { readFile } from "fs/promises";
+import TimelineData from "../data/Timeline.json";
 
 //types
 import { GetStaticProps } from "next";
+
+//animation
+import { motion } from "framer-motion";
 
 //components
 import Head from "next/head";
 import WaveBackdrop from "components/animations/WaveBackdrop";
 import Terminal, { TerminalProps } from "components/Code-Terminal.tsx/Terminal";
 import SocialMediaIcons, { SocialMediaIconsInfo } from "components/SocialMediaIcons/SocialMediaIcons";
+import Timeline from "components/Timeline/Timeline";
+import { TimelineInstanceProps } from "components/Timeline/TimelineEntry";
+
+//animation
+const TimelineVarients = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 1,
+            delay: 1.5,
+            when: "beforeChildren",
+        },
+    },
+};
 
 type LandingPageProps = TerminalProps & {
     SocialInfos: SocialMediaIconsInfo[];
+    Timeline: TimelineInstanceProps[];
 }; //new time for future intersections
 
 export default function Home(props: LandingPageProps) {
@@ -31,6 +53,17 @@ export default function Home(props: LandingPageProps) {
                     <SocialMediaIcons SocialInfos={props.SocialInfos} />
                 </section>
             </WaveBackdrop>
+            <section className="timeline-container">
+                <motion.div
+                    variants={TimelineVarients}
+                    initial="hidden"
+                    animate="visible"
+                    className="timeline-container-internal max-w-maxview mx-auto"
+                >
+                    <h2 className="text-body text-4xl w-full font-black font-inter border-b-4 border-body mb-4">Timeline</h2>
+                    <Timeline timeline={props.Timeline} />
+                </motion.div>
+            </section>
         </>
     );
 }
@@ -53,6 +86,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
                 { socialLink: "https://github.com/Parth099", introText: "View my Github", SocialMediaName: "github" },
                 { socialLink: "https://www.linkedin.com/in/parth-patel-tu/", introText: "Connect With me on Linkedin", SocialMediaName: "linkedin" },
             ],
+            Timeline: TimelineData,
         },
     };
 };
