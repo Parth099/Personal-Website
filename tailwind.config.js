@@ -34,6 +34,11 @@ module.exports = {
                 "md-max": { max: "767px" },
                 "sm-max": { max: "639px" },
             },
+            extend: {
+                flexGrow: {
+                    2: 2,
+                },
+            },
         },
     },
     safelist: ["bg-red-700", "bg-orange-500", "bg-green-800", "w-4", "h-4", "rounded-full", "bg-body"],

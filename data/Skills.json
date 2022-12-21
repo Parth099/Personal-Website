@@ -1,6 +1,37 @@
-[
-    {
-        "path": "/tech-icons/javascript.png",
-        "technology": "Javascript"
-    }
-]
+{
+    "langs": [
+        {
+            "path": "/tech-icons/javascript.svg",
+            "technology": "Javascript"
+        },
+        {
+            "path": "/tech-icons/typescript.svg",
+            "technology": "Typescript"
+        },
+        {
+            "path": "/tech-icons/python.svg",
+            "technology": "python"
+        },
+        {
+            "path": "/tech-icons/c.svg",
+            "technology": "C"
+        },
+        {
+            "path": "/tech-icons/java.svg",
+            "technology": "Java"
+        },
+        {
+            "path": "/tech-icons/html5.svg",
+            "technology": "HTML"
+        },
+        {
+            "path": "/tech-icons/css3.svg",
+            "technology": "CSS"
+        },
+        {
+            "path": "/tech-icons/matlab.svg",
+            "technology": "Matlab"
+        }
+    ],
+    "frameworks": []
+}

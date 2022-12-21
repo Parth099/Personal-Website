@@ -18,6 +18,7 @@ import Timeline from "components/Timeline/Timeline";
 import { TimelineInstanceProps } from "components/Timeline/TimelineEntry";
 import TechnicalSkills from "components/TechnicalSkills/TechnicalSkills";
 import { TechnicalSkillProps } from "components/TechnicalSkills/TechnicalSkill";
+import SkillsList, { TSkills } from "components/TechnicalSkills/SkillsList";
 
 //animation
 const TimelineVarients = {
@@ -37,7 +38,7 @@ const TimelineVarients = {
 type LandingPageProps = TerminalProps & {
     SocialInfos: SocialMediaIconsInfo[];
     Timeline: TimelineInstanceProps[];
-    Skills: TechnicalSkillProps[];
+    Skills: TSkills;
 }; //new time for future intersections
 
 export default function Home(props: LandingPageProps) {
@@ -57,7 +58,7 @@ export default function Home(props: LandingPageProps) {
                     <SocialMediaIcons SocialInfos={props.SocialInfos} />
                 </section>
             </WaveBackdrop>
-            <section className="timeline-container overflow-x-hidden">
+            <section className="timeline-container overflow-x-hidden bg-white">
                 <motion.div
                     variants={TimelineVarients}
                     initial="hidden"
@@ -71,7 +72,8 @@ export default function Home(props: LandingPageProps) {
             <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>
             <section className="tech-skills bg-body">
                 <div className="mx-auto 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm">
-                    <TechnicalSkills Skills={Skills} />
+                    <h2 className="text-white text-4xl w-full font-black font-inter border-b-4 border-white mb-4">Technical Skills</h2>
+                    <SkillsList Skills={props.Skills} />
                 </div>
             </section>
         </>

@@ -9,8 +9,8 @@ export interface TechnicalSkillProps {
 
 export default function TechnicalSkill({ skill }: { skill: TechnicalSkillProps }) {
     return (
-        <Tooltip title={skill.technology} className="p-1" placement="top" arrow>
-            <Image src={skill.path} alt={`icon of ${skill.technology}`} width={50} height={50} />
+        <Tooltip title={skill.technology} className="" placement="top" arrow>
+            <Image src={skill.path} alt={`icon of ${skill.technology}`} width={75} height={75} />
         </Tooltip>
     );
 }
