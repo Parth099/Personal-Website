@@ -18,6 +18,7 @@ import Timeline from "components/Timeline/Timeline";
 import { TimelineInstanceProps } from "components/Timeline/TimelineEntry";
 import SkillsList, { TSkills } from "components/TechnicalSkills/SkillsList";
 import ContactMe from "components/footer/ContactMe";
+import ResumeDownload from "components/ResumeDownload/ResumeDownload";
 
 //animation
 const TimelineVarients = {
@@ -57,17 +58,20 @@ export default function Home(props: LandingPageProps) {
                     <SocialMediaIcons SocialInfos={props.SocialInfos} />
                 </section>
             </WaveBackdrop>
-            <section className="timeline-container overflow-x-hidden bg-white relative md-max:pl-4">
-                <div className="absolute top-[-100px] md-max:top-[-155px] sm-max:top-[-210px]" id="timeline"></div>
-                <motion.div
-                    variants={TimelineVarients}
-                    initial="hidden"
-                    animate="visible"
-                    className="timeline-container-internal mx-auto 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm"
-                >
-                    <h2 className="text-body text-4xl w-full font-black font-inter border-b-4 border-body mb-4">Timeline</h2>
-                    <Timeline timeline={props.Timeline} />
-                </motion.div>
+            <section className="bg-white">
+                <div className="timeline-container overflow-x-hidden relative mb-6 md-max:pl-4">
+                    <div className="absolute top-[-100px] md-max:top-[-155px] sm-max:top-[-210px]" id="timeline"></div>
+                    <motion.div
+                        variants={TimelineVarients}
+                        initial="hidden"
+                        animate="visible"
+                        className="timeline-container-internal mx-auto 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm"
+                    >
+                        <h2 className="text-body text-4xl w-full font-black font-inter border-b-4 border-body mb-4">Timeline</h2>
+                        <Timeline timeline={props.Timeline} />
+                    </motion.div>
+                </div>
+                <ResumeDownload />
             </section>
             <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>
             <section className="tech-skills bg-body mb-20 md-max:pl-4">

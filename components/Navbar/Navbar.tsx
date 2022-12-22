@@ -16,8 +16,8 @@ export default function Navbar() {
                     <Link href="/#timeline" className="nav-link">
                         About Me
                     </Link>
-                    <Link href="/research" className="nav-link">
-                        Research
+                    <Link href="/#resume" className="nav-link">
+                        Resume
                     </Link>
                     <Link href="/#contact" className="nav-link">
                         Contact Information
