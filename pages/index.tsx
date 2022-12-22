@@ -52,6 +52,7 @@ export default function Home(props: LandingPageProps) {
                 />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.png" />
+                <link rel="canonical" href="parthpatel.dev" />
             </Head>
             <WaveBackdrop wavecolor="#fff" height="200px" bodycolorclass="bg-body">
                 <section className="primary-terminal-container pt-8">
@@ -74,7 +75,9 @@ export default function Home(props: LandingPageProps) {
                         <Timeline timeline={props.Timeline} />
                     </motion.div>
                 </div>
-                <ResumeDownload />
+                <section className="md-max:mt-10">
+                    <ResumeDownload />
+                </section>
             </section>
             <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>
             <section className="tech-skills bg-body mb-20 md-max:pl-4">

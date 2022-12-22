@@ -47,13 +47,13 @@ export default function SkillsList({ Skills }: SkillsListProps) {
         >
             <h2 className="text-4xl w-full font-black font-inter border-b-4 border-white mb-4">Technical Skills</h2>
             <motion.div variants={SkillListChildVarients} custom={1} className="flex items-center mb-5 xl-max:flex-col xl-max:items-start">
-                <h3 className="border-r-white  text text-3xl font-black p-3 font-inter grow xl-max:border-0 lg-max:text-xl">Languages</h3>
+                <h3 className="border-r-white  text text-3xl font-black font-inter grow xl-max:border-0 lg-max:text-xl">Languages</h3>
                 <section className="grow-[2]">
                     <TechnicalSkills Skills={Skills.langs} />
                 </section>
             </motion.div>
             <motion.div variants={SkillListChildVarients} custom={2} className="flex items-center mb-5 xl-max:flex-col xl-max:items-start">
-                <h3 className="border-r-white text text-3xl font-black p-3 font-inter grow xl-max:border-0 lg-max:text-xl">Frameworks/Services</h3>
+                <h3 className="border-r-white text text-3xl font-black font-inter grow xl-max:border-0 lg-max:text-xl">Frameworks/Services</h3>
                 <section className="grow-[2]">
                     <TechnicalSkills Skills={Skills.frameworks} />
                 </section>
