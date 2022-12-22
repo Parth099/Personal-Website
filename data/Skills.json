@@ -47,6 +47,10 @@
             "technology": "Node.js"
         },
         {
+            "path": "/tech-icons/expressjs.svg",
+            "technology": "ExpressJS"
+        },
+        {
             "path": "/tech-icons/tailwindcss.svg",
             "technology": "TailwindCSS"
         },

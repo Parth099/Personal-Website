@@ -25,6 +25,7 @@ module.exports = {
             },
             height: {
                 contactCircle,
+                imgInit: "75px",
             },
             maxWidth: {
                 maxview: max_view_width,
