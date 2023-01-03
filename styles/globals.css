@@ -95,6 +95,12 @@ select {
     scale: 1.1;
 }
 
+@media (max-width: 768px) {
+    .nav-link {
+        padding: 10px 12px;
+    }
+}
+
 /* Credit: https://svgwave.in/ */
 
 .path-0 {
