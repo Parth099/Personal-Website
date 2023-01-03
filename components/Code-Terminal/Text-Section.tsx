@@ -20,11 +20,12 @@ const textVarients = {
 
 export default function TextSection({ text }: TextSectionProps) {
     return (
-        <section className="bg-terminalTabColor px-4 pt-2 pb-4 rounded-b-lg">
+        <section className="bg-terminalTabColor px-4 pt-3 pb-4 rounded-b-lg">
             {text.map((str, i) => {
                 return (
-                    <motion.pre variants={textVarients} custom={i} key={i} className="block">
-                        <span className="text-[#6e7681]">{i + 1} </span> {str}
+                    <motion.pre variants={textVarients} custom={i} key={i} className="flex gap-3">
+                        <span className="text-[#6e7681]">{i + 1}</span>
+                        <p>{str}</p>
                     </motion.pre>
                 );
             })}

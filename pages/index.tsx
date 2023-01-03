@@ -63,7 +63,7 @@ export default function Home(props: LandingPageProps) {
                 </section>
             </WaveBackdrop>
             <section className="bg-white">
-                <div className="timeline-container overflow-x-hidden relative mb-6 md-max:pl-4">
+                <div className="timeline-container overflow-x-hidden relative mb-6 md-max:px-4">
                     <div className="absolute top-[-100px] md-max:top-[-155px] sm-max:top-[-210px]" id="timeline"></div>
                     <motion.div
                         variants={TimelineVarients}
@@ -80,12 +80,12 @@ export default function Home(props: LandingPageProps) {
                 </section>
             </section>
             <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>
-            <section className="tech-skills bg-body mb-20 md-max:pl-4">
+            <section className="tech-skills bg-body mb-20 md-max:px-4">
                 <div className="mx-auto 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm">
                     <SkillsList Skills={props.Skills} />
                 </div>
             </section>
-            <footer className="bg-navbar py-5 md-max:pl-4">
+            <footer className="bg-navbar py-5 md-max:px-4">
                 <div className="mx-auto 2xl:max-w-maxview xl:max-w-lg lg:max-w-md md:max-w-sm sm:max-w-sm">
                     <ContactMe />
                 </div>
