@@ -29,7 +29,7 @@ const SkillListChildVarients = {
         return {
             opacity: 1,
             transition: {
-                duration: 0.75,
+                duration: 0.6,
                 delay: i * 0.3,
             },
         };
@@ -47,14 +47,18 @@ export default function SkillsList({ Skills }: SkillsListProps) {
         >
             <h2 className="text-4xl w-full font-black font-inter border-b-4 border-white mb-7">Technical Skills</h2>
             <section className="TechnicalSkills-grid grid grid-cols-2 xl-max:grid-cols-1">
-                <h3 className="text-3xl inline font-black font-inter lg-max:text-xl">Languages</h3>
-                <section className="mb-8 md-max:mb-5">
+                <motion.h3 variants={SkillListChildVarients} custom={1} className="text-3xl inline font-black font-inter lg-max:text-xl">
+                    Languages
+                </motion.h3>
+                <motion.section variants={SkillListChildVarients} custom={2} className="mb-8 md-max:mb-5">
                     <TechnicalSkills Skills={Skills.langs} />
-                </section>
-                <h3 className="text-3xl inline font-black font-inter lg-max:text-xl">Frameworks/Services</h3>
-                <section>
+                </motion.section>
+                <motion.h3 variants={SkillListChildVarients} custom={3} className="text-3xl inline font-black font-inter lg-max:text-xl">
+                    Frameworks/Services
+                </motion.h3>
+                <motion.section variants={SkillListChildVarients} custom={4}>
                     <TechnicalSkills Skills={Skills.frameworks} />
-                </section>
+                </motion.section>
             </section>
         </motion.section>
     );
