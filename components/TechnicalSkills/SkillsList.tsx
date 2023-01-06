@@ -45,19 +45,17 @@ export default function SkillsList({ Skills }: SkillsListProps) {
             whileInView="inView"
             viewport={{ once: true }}
         >
-            <h2 className="text-4xl w-full font-black font-inter border-b-4 border-white mb-4">Technical Skills</h2>
-            <motion.div variants={SkillListChildVarients} custom={1} className="flex items-center mb-5 xl-max:flex-col xl-max:items-start">
-                <h3 className="border-r-white  text text-3xl font-black font-inter grow xl-max:border-0 lg-max:text-xl">Languages</h3>
-                <section className="grow-[2]">
+            <h2 className="text-4xl w-full font-black font-inter border-b-4 border-white mb-7">Technical Skills</h2>
+            <section className="TechnicalSkills-grid grid grid-cols-2 xl-max:grid-cols-1">
+                <h3 className="text-3xl inline font-black font-inter lg-max:text-xl">Languages</h3>
+                <section className="mb-8 md-max:mb-5">
                     <TechnicalSkills Skills={Skills.langs} />
                 </section>
-            </motion.div>
-            <motion.div variants={SkillListChildVarients} custom={2} className="flex items-center mb-5 xl-max:flex-col xl-max:items-start">
-                <h3 className="border-r-white text text-3xl font-black font-inter grow xl-max:border-0 lg-max:text-xl">Frameworks/Services</h3>
-                <section className="grow-[2]">
+                <h3 className="text-3xl inline font-black font-inter lg-max:text-xl">Frameworks/Services</h3>
+                <section>
                     <TechnicalSkills Skills={Skills.frameworks} />
                 </section>
-            </motion.div>
+            </section>
         </motion.section>
     );
 }
