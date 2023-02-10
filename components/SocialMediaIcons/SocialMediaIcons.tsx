@@ -13,6 +13,9 @@ const SocialMediaIconVarients = {
             transition: { duration: 0.5, delay: i * 0.3 + 1 },
         };
     },
+    whileHover: {
+        scale: 1.1,
+    },
 };
 
 export interface SocialMediaIconsInfo {
