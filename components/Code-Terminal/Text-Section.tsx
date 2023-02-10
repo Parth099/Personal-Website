@@ -13,7 +13,7 @@ const textVarients = {
     visible: (i: number) => {
         return {
             opacity: 1,
-            transition: { duration: 0.4, delay: i * 0.2 },
+            transition: { duration: 0.4, delay: i * 0.15 },
         };
     },
 };

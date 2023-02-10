@@ -6,3 +6,8 @@ I am intersted in:
     - Web Development
     - Cloud Computing
     - Machine Learning
+
+Currently Learning:
+    - Mathematical Modeling
+    - Intro to Data Science
+    - Software Design

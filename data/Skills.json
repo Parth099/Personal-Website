@@ -9,6 +9,14 @@
             "technology": "Typescript"
         },
         {
+            "path": "/tech-icons/html5.svg",
+            "technology": "HTML"
+        },
+        {
+            "path": "/tech-icons/css3.svg",
+            "technology": "CSS"
+        },
+        {
             "path": "/tech-icons/python.svg",
             "technology": "python"
         },
@@ -19,14 +27,6 @@
         {
             "path": "/tech-icons/java.svg",
             "technology": "Java"
-        },
-        {
-            "path": "/tech-icons/html5.svg",
-            "technology": "HTML"
-        },
-        {
-            "path": "/tech-icons/css3.svg",
-            "technology": "CSS"
         },
         {
             "path": "/tech-icons/matlab.svg",
@@ -41,6 +41,10 @@
         {
             "path": "/tech-icons/nextjs.svg",
             "technology": "NextJS"
+        },
+        {
+            "path": "/tech-icons/redux.svg",
+            "technology": "Redux / Redux-Toolkit"
         },
         {
             "path": "/tech-icons/nodejs.svg",
