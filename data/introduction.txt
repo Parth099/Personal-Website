@@ -1,13 +1,13 @@
-Hi, my name is am Parth
+Hi, my name is Parth
 I am a student at Temple University majoring in Math & Computer Science
 My expected graduation is May 2024
 
-I am intersted in:
+I am interested in:
     - Web Development
     - Cloud Computing
     - Machine Learning
 
 Currently Learning:
-    - Mathematical Modeling
+    - Financial Computing
     - Intro to Data Science
     - Software Design
