@@ -76,7 +76,7 @@ export default function Home(props: LandingPageProps) {
                     </motion.div>
                 </div>
                 <section className="md-max:mt-10">
-                    <ResumeDownload />
+                    <ResumeDownload resumeLink="/resume/resume_parth_patel-10-20-23.pdf" />
                 </section>
             </section>
             <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>

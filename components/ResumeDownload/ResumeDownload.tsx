@@ -17,7 +17,7 @@ const ResumeDownloadVarient = {
     },
 };
 
-export default function ResumeDownload() {
+export default function ResumeDownload({ resumeLink }: { resumeLink: string }) {
     return (
         <motion.div
             variants={ResumeDownloadVarient}
@@ -27,7 +27,7 @@ export default function ResumeDownload() {
             className="flex justify-center items-center gap-2 text-2xl sm-max:text-xl relative"
         >
             <p className="font-bold font-inter">Download one-page resume </p>
-            <Link href="/resume/resume_parth_patel-02-10-23.pdf" target="_blank" download={true}>
+            <Link href={resumeLink} target="_blank" download={true}>
                 <motion.div whileHover={{ scale: 1.1 }}>
                     <Image src="/pdf_dl.svg" alt="download resume pdf link" width={48} height={48} className="sm-max:w-9 sm-max:h-9" />
                 </motion.div>
