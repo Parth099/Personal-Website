@@ -7,6 +7,7 @@ import TechnicalSkills from "./TechnicalSkills";
 export interface TSkills {
     langs: TechnicalSkillProps[];
     frameworks: TechnicalSkillProps[];
+    cloud: TechnicalSkillProps[];
 }
 
 interface SkillsListProps {
@@ -56,8 +57,14 @@ export default function SkillsList({ Skills }: SkillsListProps) {
                 <motion.h3 variants={SkillListChildVarients} custom={3} className="text-3xl inline font-black font-inter lg-max:text-xl">
                     Frameworks/Services
                 </motion.h3>
-                <motion.section variants={SkillListChildVarients} custom={4}>
+                <motion.section variants={SkillListChildVarients} custom={4} className="mb-8 md-max:mb-5">
                     <TechnicalSkills Skills={Skills.frameworks} />
+                </motion.section>
+                <motion.h3 variants={SkillListChildVarients} custom={5} className="text-3xl inline font-black font-inter lg-max:text-xl">
+                    Cloud
+                </motion.h3>
+                <motion.section variants={SkillListChildVarients} custom={6}>
+                    <TechnicalSkills Skills={Skills.cloud} />
                 </motion.section>
             </section>
         </motion.section>
