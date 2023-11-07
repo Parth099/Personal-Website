@@ -3,7 +3,6 @@ variable "default_labels" {
   default = {
     environment = "dev"
     app         = "personal-website"
-    sprint      = 4
   }
 }
 
@@ -57,7 +56,7 @@ variable "ecs_backend_container_info" {
 variable "docker_image_info" {
   type = map(string)
   default = {
-    "name" = "parth099/personal-website:0.0.3"
+    "name" = "parth099/personal-website:tudev-demo"
   }
 }
 
