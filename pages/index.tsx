@@ -41,6 +41,8 @@ type LandingPageProps = TerminalProps & {
     Skills: TSkills;
 }; //new time for future intersections
 
+const LATEST_RESUME_VERSION = "resume_parth_patel-02-14-25.pdf";
+
 export default function Home(props: LandingPageProps) {
     return (
         <main className="">
@@ -76,7 +78,7 @@ export default function Home(props: LandingPageProps) {
                     </motion.div>
                 </div>
                 <section className="md-max:mt-10">
-                    <ResumeDownload resumeLink="/resume/Patel_Parth_Resume_4_22_24.pdf" />
+                    <ResumeDownload resumeLink={`/resume/${LATEST_RESUME_VERSION}`} />
                 </section>
             </section>
             <WaveBackdrop wavecolor="#333333" height="200px" bodycolorclass="bg-white"></WaveBackdrop>

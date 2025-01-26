@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+    reactStrictMode: true,
+    images: {
+        domains: ["images.credly.com"], // Add the external domain
+    },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

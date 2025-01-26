@@ -1,7 +1,13 @@
 [
     {
+        "date": "Feb 2024",
+        "title": "Joined JP Morgan & Chase as a Software Engineering New Grad :)",
+        "info": []
+    },
+    {
         "date": "June 2023",
-        "title": "Incoming Software Engineering Intern at JP Morgan & Chase"
+        "title": "Completed Software Engineering Intern at JP Morgan & Chase",
+        "info": ["Learned proper testing methods for Java Applications", "Worked for the first time in proper sprints and used Agile Methodologies"]
     },
     {
         "date": "January 2023",

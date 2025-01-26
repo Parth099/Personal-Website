@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 
 import { TechnicalSkillProps } from "./TechnicalSkill";
 import TechnicalSkills from "./TechnicalSkills";
+import Cert, { CertInfo, Certs } from "./Cert";
 
 export interface TSkills {
     langs: TechnicalSkillProps[];
     frameworks: TechnicalSkillProps[];
+    certs: CertInfo[];
 }
 
 interface SkillsListProps {
@@ -58,6 +60,12 @@ export default function SkillsList({ Skills }: SkillsListProps) {
                 </motion.h3>
                 <motion.section variants={SkillListChildVarients} custom={4}>
                     <TechnicalSkills Skills={Skills.frameworks} />
+                </motion.section>
+                <motion.h3 variants={SkillListChildVarients} custom={5} className="text-3xl inline font-black font-inter lg-max:text-xl">
+                    Certifications
+                </motion.h3>
+                <motion.section variants={SkillListChildVarients} custom={6}>
+                    <Certs certs={Skills.certs} />
                 </motion.section>
             </section>
         </motion.section>

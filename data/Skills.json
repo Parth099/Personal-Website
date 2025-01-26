@@ -66,5 +66,37 @@
             "path": "/tech-icons/firebase.svg",
             "technology": "Firebase"
         }
+    ],
+    "certs": [
+        {
+            "path": "/tech-icons/clf001.png",
+            "certName": "AWS Cloud Practitioner",
+            "certEvidence": "https://www.credly.com/badges/72d5d493-664c-4e92-b3a8-4ae0c8dceac1"
+        },
+        {
+            "path": "https://images.credly.com/images/85b9cfc4-257a-4742-878c-4f7ab4a2631b/image.png",
+            "certName": "HashiCorp Terraform Associate",
+            "certEvidence": "https://www.credly.com/badges/f44fc13f-a825-4b38-9412-e62b0d59e981"
+        },
+        {
+            "path": "https://images.credly.com/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/twitter_thumb_201604_image.png",
+            "certName": "Azure Fundamentals",
+            "certEvidence": "https://learn.microsoft.com/en-us/users/parthpatel-7785/credentials/9591bc5f6cfeb02e"
+        },
+        {
+            "path": "https://images.credly.com/images/336eebfc-0ac3-4553-9a67-b402f491f185/twitter_thumb_201604_azure-administrator-associate-600x600.png",
+            "certName": "Azure Administrator Associate",
+            "certEvidence": "https://learn.microsoft.com/en-us/users/parthpatel-7785/credentials/5c2cb6ef50ea2a2e"
+        },
+        {
+            "path": "https://images.credly.com/images/987adb7e-49be-4e24-b67e-55986bd3fe66/twitter_thumb_201604_azure-solutions-architect-expert-600x600.png",
+            "certName": "Azure Solutions Architect Expert",
+            "certEvidence": "https://learn.microsoft.com/en-us/users/parthpatel-7785/credentials/d7dd8441b9491f17"
+        },
+        {
+            "path": "https://images.credly.com/images/1ad16b6f-2c71-4a2e-ae74-ec69c4766039/twitter_thumb_201604_azure-security-engineer-associate600x600.png",
+            "certName": "Azure Security Engineer Associate",
+            "certEvidence": "https://learn.microsoft.com/en-us/users/parthpatel-7785/credentials/9bbe03d64c2f470e"
+        }
     ]
 }

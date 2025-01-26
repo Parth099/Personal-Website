@@ -1,13 +1,11 @@
 Hi, my name is Parth
-I am a student at Temple University majoring in Math & Computer Science
-My expected graduation is May 2024
+I am a full time engineer at JP Morgan & Chase
+I graduated in December 2023 with a BS in Math & Computer Science
 
 I am interested in:
     - Web Development
     - Cloud Computing
-    - Machine Learning
+    - DevOps
 
-Currently Learning:
-    - Financial Computing
-    - Intro to Data Science
-    - Software Design
+At Chase, my work consists of preparing our Azure Cloud environment for general use. 
+This means configuring guardrails for keeping developers compliant with the Firms's policies as well as developing systems for logging and Authn/Authz.
