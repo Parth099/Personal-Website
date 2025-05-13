@@ -1,11 +1,10 @@
-Hi, my name is Parth
-I am a full time engineer at JP Morgan & Chase
-I graduated in December 2023 with a BS in Math & Computer Science
+Hi, I'm Parth.
+I'm a full-time Software Engineer at JPMorgan Chase, where I focus on enabling and securing cloud infrastructure.
 
-I am interested in:
-    - Web Development
-    - Cloud Computing
-    - DevOps
+I graduated in December 2023 with a B.S. in Mathematics and Computer Science, and I’m passionate about:
 
-At Chase, my work consists of preparing our Azure Cloud environment for general use. 
-This means configuring guardrails for keeping developers compliant with the Firms's policies as well as developing systems for logging and Authn/Authz.
+- Web Development
+- Cloud Computing & Networking
+- DevOps
+
+At Chase, I help prepare our Azure cloud environment for enterprise-wide use. My work involves configuring guardrails to ensure developer compliance with firm-wide policies, building systems for logging and authentication/authorization (AuthN/AuthZ), and supporting secure cloud access. Currently, I’m part of the networking team, where we focus on private connectivity and provisioning network components in customer cloud accounts.
